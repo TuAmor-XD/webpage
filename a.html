@@ -1,0 +1,109 @@
+<html>
+<head>
+    <title>Group 2 FOC </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+<section id="banner">
+    <img src="images/logo.png" class="logo">
+    <div class="banner-text">
+        <h1>Fundamentals</h1>
+        <h1>of Computing</h1>
+        <p>Welcome to Group _'s web page for the fundamentals of computing class (CMPS1134) at the university of Belize</p>
+        <div class="banner-btn">
+            <a href="#"><span></span>About</a>
+            
+        </div>
+    </div>
+</section>
+
+<div id="sideNav">
+    <nav>
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">COURSE</a></li>
+        <li><a href="#">PROJECT</a></li>
+        <li><a href="#">CONCEPTS</a></li>
+        <li><a href="#">DATABASES</a></li>
+        <li><a href="#">DOCUMENTATION</a></li>
+        <li><a href="#">TEAM</a></li>
+    </ul>
+    </nav>  
+</div>
+    <div id="menuBtn">
+        <img src="images/menu.png" id="menu">
+</div>
+    
+<section id = "feature">
+<div class = "title-text">
+<p>COURSE</p>
+<h1>Fundamentals of Computing</h1>
+</div>
+<div class = "features">
+    <h1>This course is an introduction to the fundamentals of Computer Science that will provide students with a foundation for future courses in Computer Science. The course is a broad survey of the discipline through topics that allow students to understand the capabilities of computer systems in terms of: the computer architecture; operating systems and computer networks; software and software development; data organization and visualization; and the potential of computing machines.</h1>
+</div>
+</section>
+    
+<section id = "Project">
+<div class = "title-text">
+<p>PROJECT</p>
+<h1></h1>
+</div>
+</section>
+
+<section id = "Concepts">
+<div class = "title-text">
+<p>CONCEPTS</p>
+<h1></h1>
+</div>
+</section>
+    
+<section id = "Databases">
+<div class = "title-text">
+<p>DATA BASES</p>
+<h1></h1>
+</div>
+</section>
+    
+<section id = "documentation">
+<div class = "title-text">
+<p>DOCUMENTATION</p>
+<h1></h1>
+</div>
+</section>
+
+<section id = "dev team">
+<div class = "title-text">
+<p>DEV TEAM</p>
+<h1></h1>
+</div>
+</section>
+    
+
+<script> 
+var menuBtn = document.getElementById("menuBtn") 
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+sideNav.style.right = "-250px";
+
+menuBtn.onclick = function(){
+    if(sideNav.style.right == "-250px"){
+        sideNav.style.right = "0";
+        menu.src = "images/close.png";
+    }
+    else{
+        sideNav.style.right = "-250px";
+        menu.src = "images/menu.png";
+        
+    }
+}
+</script>
+    
+</body>    
+</html>
