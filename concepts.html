@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>FoC</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <section id="banner">
+    <img src="images/logo.png" class="logo">
+            <div class="banner-text">
+                  <article>
+  <center> <a href="https://docs.google.com/presentation/d/1U9iXLG5U7AraTIjt5SQsIQRBqt_v-x6M59IeAXXUDR0/edit?usp=sharing"><img src="concepts.PNG" alt="Concepts" width="515" height="290" ></a>
+   <p></p>
+
+    <p>Click on the image above for presentation.</p>
+	  <p> <a href="https://drive.google.com/file/d/1MQ6RLFJ4ePxckq2uc3vrH9X65NVjI4kb/view?usp=sharing">Click here for recording.</a></p></center>
+    </article>
+        </div>
+    </section>
+
+
+<section>
+    <div id="sideNav">
+  <nav>
+    <ul>
+    <li><a href="a.html">HOME</a></li>
+        <li><a href="course.html">COURSE</a></li>
+        <li><a href="project.html">PROJECT</a></li>
+        <li><a href="concepts.html">CONCEPTS</a></li>
+        <li><a href="database.html">DATABASES</a></li>
+        <li><a href="doc.html">DOCUMENTATION</a></li>
+        <li><a href="team.html">TEAM</a></li>
+    </ul>
+    </nav>  
+</div>
+    <div id="menuBtn">
+        <img src="images/menu.png" id="menu">
+</div>
+  
+
+</section>
+
+<script> 
+var menuBtn = document.getElementById("menuBtn") 
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+sideNav.style.right = "-250px";
+
+menuBtn.onclick = function(){
+    if(sideNav.style.right == "-250px"){
+        sideNav.style.right = "0";
+        menu.src = "images/close.png";
+    }
+    else{
+        sideNav.style.right = "-250px";
+        menu.src = "images/menu.png";
+        
+    }
+}
+</script>
+    
+
+</body>
+</html>
